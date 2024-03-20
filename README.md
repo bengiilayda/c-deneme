@@ -1,0 +1,2 @@
+# c-deneme
+not ortalamasi
