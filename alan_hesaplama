@@ -1,0 +1,59 @@
+namespace aritmetikislemleryt8
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //kare alan hesaplama
+            double kareKenarUzunluk;
+            double alan;
+
+            kareKenarUzunluk = Convert.ToDouble(textBoxKareKenar.Text);
+            alan = (double) kareKenarUzunluk * kareKenarUzunluk;
+            labelKare.Text = alan.ToString();
+
+
+            //dikdörtgen alan hesaplama
+            double dikKisaKenar;
+            double dikUzunKenar;
+
+            dikKisaKenar = Convert.ToDouble(textBoxDikKisa.Text);
+            dikUzunKenar = Convert.ToDouble(textBoxDikUzun.Text);
+            double Dikalan = (double)(dikKisaKenar * dikUzunKenar);
+            labelDik.Text =Dikalan.ToString();
+
+            //daire alan hesaplama 
+            double yaricap=Convert.ToDouble(textBoxDaire.Text);
+            double alanDaire= (double) Math.PI * (yaricap*yaricap);
+            labelDaire.Text = alanDaire.ToString();
+
+
+
+        }
+
+        private void textBoxKareKenar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelKare_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
